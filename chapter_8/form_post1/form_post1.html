@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Menggunakan Form v.3</title>
+  </head>
+  <body>
+    <h2>Belajar Menggunakan Maxlength</h2>
+    <p>Tulis Cita-Cita Anda</p>
+    <form action="form_post1.rb" method="post">
+      <label for="cita-cita">Cita-cita:</label>
+      <input type="text" id="cita-cita" name="cita2" size="55" maxlength="50" />
+      <br /><br />
+      <input type="submit" value="Kirim" />
+    </form>
+  </body>
+</html>
+
+<!-- Note : Setelah melewati batas jumlah karakter, Anda tidak bisa lagi mengetik karakter-karakter lainnya. -->
+
+<!-- Textbox
+    Textbox adalah komponen form yang paling lazim digunakan dalam aplikasi website.
+    Bisa dipakai untuk meng-input nama dan data-data dengan jumlah karakter pendek lainya,
+    seperti: usia, nomor telepon, nama kota, dan lain sebagainya.
+    Untuk membuat textbox, cukup gunakan tag seperti ini:
+
+    <input type="text" name="namasaya">
+    
+    Atribut type yang diisi dengan nilai "text" mengindikasikan bahwa kita ingin membuat textbox,
+    sedangkan atribut name digunakan oleh Ruby untuk "menangkap" data yang diisi di dalam textbox
+    itu pada saat aplikasi web dijalankan.
+-->
+
+<!-- Atribut Size dan Maxlength
+    Anda bisa mengatur ukuran textbox itu dengan memasukkan atribut size. Misalnya dengan menuliskan seperti berikut:
+
+    <input type="text" name="namasaya" size="25">
+
+    Pada contoh diatas, atribut size diisi dengan nilai 25. Dengan demikian, textbox akan ditampilkan dengan ukuran
+    yang kira-kira fit untuk menampung 25 karakter sekaligus. Namu, bukan berarti data yang dimasukkan dibatasi hanya 
+    25 karakter saja, sebab untuk pembatasan jumlah karakter, Anda bisa menggunakan atribut lain yang akan kita bahas 
+    berikutnya ini.
+
+    Atribut lain yang bisa Anda pakai, yaitu: maxlength yang berfungsi untuk membatasi jumlah karakter yang dapat
+    dimasukkan ke dalam textbox itu. Tulislah seperti ini:
+
+    <input type="text" name="namasaya" size="25" maxlength="50">
+
+    Pada contoh di atas, jumlah karakter maksimal yang bisa diinput ke dalam textbox sebanyak 50 karakter. Sebagai contoh,
+    coba tulis kode-kode program HTML diatas code ini.
+    
+-->
+
+<!-- Atribud Required
+  HTML menyediakan satu atribut lagi yang cukup membantu penginputandata, yaitu: required.
+  Apabila Anda menggunakan atribut ini maka itu artinya, user harus memasukkan data ke dalam
+  textbox ini. Dengan kata lain, textbox tidak boleh kosong.
+
+  <input type="text" name="namasaya" size="25" required>
+-->
+
+<!-- Textbox Alamat E-mail dan Website
+  Pada HTML 5, tersedia nilai baru untuk atribut type dalam tag<input>.
+  Nilai itu adalah email dan URL yang berfungsi untuk menciptakan textbox
+  khusus untuk isian email dan alamat website. Penulisannya seperti ini:
+        
+  <input type="email" name="emailsaya">
+  <input type="URL" name="websitesaya">      
+
+  Apabila Anda menggunakan komputer, kedua textbox dengan atribut type berisi nilai email dan URL
+  mungkin tidak terlihat berbeda dengan textbox standar. Tapi jika Anda menggunakan smartphone seperti
+  iPhone, maka begitu Anda mengisi data ke dalam textbox untuk e-mail, keyboard virtual iPhone akan 
+  menyajikan karakter @ untuk memudahkan Anda menginput alamat e-mail dengan benar.
+-->
+
+<!-- Text Area
+  Text Area pada dasarnya textbox yang berukuran lebih besar sehingga bisa menampung lebih banyak karakter.
+  Umumnya dipakai untuk menampung komentar, keluhan, masukan, atau informasi lainnya yang harus dijabarkan secara 
+  detail. Untuk membuat text area, gunakan text <textarea> dan ddiikuti dengan atribut name serta rows yang menentukan
+  berapa baris teks yang bisa ditampung. Anda juga bisa menentukan banyak sedikitnya jumlah teks secara horizontal yang bisa
+  ditampung menggunakan atribut cols.
+  Begini cara penulisan sederhananya:
+
+      <textarea name="masukan" rows="5" cols="60">
+
+-->
+
+<!-- Tombol Submit dan Reset
+    Saat data-data sudah ditulis oleh para pengunjung maka agar data itu dapat dikirim, baik menuju ke file Ruby atau
+    alamat email, orang itu harus menekan tombol Submit. Di samping tombol Submit biasanya terdapat tombol Reset yang 
+    dapat difungsikan untuk menghapus seluruh data yang sudah ditulis sehingga seluruh komponen form dalam kondisi kosong.
+
+    Untuk membuat tombol submit, cukup isi atribut type dalam submit. Dan untuk tombol reset, cukup isi dengan reset.
+    Anda bisa menulis teks di atas kedua tombol itu dengan tulisan dalam bahasa Anda sendiri memakai atribut Value.
+    Berikut salah satu penggunaannya:
+      
+      <input type="submit" value="kirim">
+      <input type="reset" value="harus">
+
+-->

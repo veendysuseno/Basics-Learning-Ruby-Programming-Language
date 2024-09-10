@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Menggunakan Form</title>
+  </head>
+  <body>
+    <h2>Belajar Menggunakan Form dengan Metode Post</h2>
+    <p>Masukkan Data Anda</p>
+
+    <form action="form_postrv.rb" method="post">
+      <label for="idpegawai">ID Pegawai:</label>
+      <input
+        type="text"
+        id="idpegawai"
+        name="idpegawai"
+        placeholder="tulis ID Pegawai"
+      />
+      <br /><br />
+
+      <label for="nama">Nama:</label>
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="tulis namamu di sini"
+      />
+      <br /><br />
+
+      <label for="alamat">Alamat:</label>
+      <br />
+      <textarea
+        id="alamat"
+        name="alamat"
+        placeholder="tulis alamat lengkap di sini"
+      ></textarea>
+      <br /><br />
+
+      <input type="submit" value="kirim" />
+    </form>
+  </body>
+</html>
+
+<!-- Note : -->
+<!-- Placeholder Text
+    Placeholder text adalah: teks yang sudah muncul di dalam textbox atau text area. Fungsinya lebih untuk membantu mempermudah 
+    atau / memandu user mengisi data yang tepat ke dalam textbox atau text area itu. Misalnya jika Anda menulis kalimat "Masukkan 
+    komentar Anda di sini" pada text area, maka pengunjung tahu apa yang harus mereka masukkan di dalam text area tersebut, yaitu: 
+    komentar dan bukan yang lain, seperti: alamat atau alamat Twitter.
+
+    Jika Anda menggunakan HTML versi lama, maka Anda bisa menggunakkan atribut value untuk menciptakan teks semacam itu. 
+    Contohnya sebagai berikut:
+
+        <input type="text" name="namasaya" value="Tulis Nama Anda di sini"
+
+    Untuk text area, Anda tidak membutuhkan atribut apapun. Cukup tulis teks itu di antara tag <textarea>...</textarea>.
+    Contoh sebagai berikut:
+
+      <textarea nama="masukan">Tulis Kritik dan Saran di Sini</textarea>
+
+    Apabila Anda menggunakan HTML 5, maka Anda bisa menggunakan atribut placeholder. Berbeda dengan value yang ditulis dengan menggunakan
+    warna hitam solid, teks di dalam placeholder biasanya berwarna abu-abu. Contohnya sebagai berikut:
+
+      <input type="text" name="namasaya" placeholder="Tulis Nama Anda di Sini">
+
+    Berikut salah satu kode-kode HTML lengkap pembuatan form lengkap dengan value dan placeholder.
+
+-->

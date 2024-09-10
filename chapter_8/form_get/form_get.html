@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Menggunakan Form</title>
+  </head>
+  <body>
+    <h2>Belajar Menggunakan Form dengan Method Get (Metode Get)</h2>
+    <p>Masukkan Data Anda</p>
+    <form action="form_get.rb" method="get">
+      <label for="idpegawai">ID Pegawai:</label>
+      <input type="text" id="idpegawai" name="idpegawai" />
+      <br /><br />
+
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" />
+      <br /><br />
+
+      <label for="alamat">Alamat:</label>
+      <input type="text" id="alamat" name="alamat" />
+      <br /><br />
+
+      <input type="submit" value="Kirim" />
+    </form>
+  </body>
+</html>
+
+<!-- Note Code:
+    form_get.html = file kode HTML ini digunakan untuk membuat form dan mengirim nilai/data ke dalam file Ruby (form_get.rb) menggunakan metode GET.
+  -->
